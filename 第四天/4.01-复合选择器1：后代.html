@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div里面的span文字颜色是红色 */
+        /* 后代选择器 选中所有后代包含儿子孙子重孙子*/
+        div span {
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <span>span 标签</span>
+    <div>
+        <span>这是div的儿子span</span>
+        <p>
+            <span>这是孙子span </span>
+        </p>
+    </div>
+    
+</body>
+</html>

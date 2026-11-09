@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 独占一行宽高默认生效默认宽度是父级的100% */
+        div {
+            width: 100px;
+            height: 100px;
+
+            /* display: inline-block; */
+             display: inline; 
+            
+
+        }
+        .div1 {
+            background-color: brown;
+        }
+        .div2 {
+            background-color: yellow;
+        }
+        /* 一行共存多个宽高属性不生效宽高有内容撑开 */
+        span {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .span1 {
+            background-color: pink;
+            /* display: block; */
+        }
+        .span2 {
+            background-color: black;
+            /* display: block; */
+        }
+        /* 一行共存多个默认尺寸有内容撑开宽高生效*/
+        img {
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块元素 -->
+    <div class="div1">div 标签</div>
+    <div class="div2">div 标签</div>
+
+    <!-- 行内元素 -->
+     <span class="span1">span标签</span>
+     <span class="span2">span标签</span>
+
+     <!-- 行内块元素 -->
+    <img src="./tupian.jpg" alt="">
+    <img src="./tupian.jpg" alt="">
+
+</body>
+</html>
