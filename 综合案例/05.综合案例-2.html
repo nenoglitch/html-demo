@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .news {
+            margin: 100px auto;
+            width: 360px;
+            height: 200px;
+            background-color: pink;
+        } 
+
+        .news .hd {
+            height: 34px;
+            background-color: #eee;
+            border: 1px soild #dbdee1;
+            border-left: 0;
+        }
+
+        .news .hd a {
+            /* 盒子向上移动 */
+            margin-top: -1px;
+            border-top: 3px solid #ff8400;
+            border-right: 1px solid #dbdee1;
+            width: 48px;
+            height: 34px;
+            background-color: #fff;
+            display: block;
+
+            text-align: center;
+            line-height: 32px;
+            font-size: 14px;
+            color: #333;
+        } 
+
+        .news .bd {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="hd"><a href="#">新闻</a></div>
+        <div class="bd">
+            <ul>
+            <li><a href="#">点赞“新农人”温暖的伸手</a></li>
+            <li><a href="#">山宗水源，风光无限——大美青海的高原追梦人</a></li>
+            <li><a href="#">坚决反对美将中国企业列入所谓涉疆法案实体清单</a></li>
+            <li><a href="#">西藏巴青震区板房里烟火气渐起</a></li>
+            <li><a href="#">前主编Global丨外媒:博索纳罗长子飞抵美国</a></li>
+            <li><a href="#">一座城的“文旅蝶变”，藏在老百姓的烟火日常里</a></li>  
+        </ul>
+        </div>
+    </div>
+</body>
+</html>
